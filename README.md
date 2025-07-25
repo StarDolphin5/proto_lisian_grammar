@@ -11,11 +11,11 @@ merely by setting `main.typ` to visible.
 ## Organization
 ### Root
 The root contains main.typ, which is the "entry point" to the project.
-It's what you'd run typst compile main.typ on on the desktop,
+It's what you'd run `typst compile main.typ` on on the desktop,
 or what you'd set to "visible" on the web app.
 It's relatively simple in that basically only includes content,
-sometimes #include -ing content which has been split up in the chapters directory.
-Then it has Conlang Template.typ,
+sometimes `#include` -ing content which has been split up in the chapters directory.
+Then it has `Conlang Template.typ`,
 which features most of the instructions about the "look" of the final PDF,
 such as font sizes, colours, margins, headings, etc.
 You can leave it alone except if you want to tinker with the look.
@@ -23,7 +23,7 @@ You can leave it alone except if you want to tinker with the look.
 The project also uses the package `leipzig-glossing` heavily,
 which includes functions for, well, glossing,
 but also for creating abbreviations for use in glossing.
-That's where my-abbreviations.typ comes in.
+That's where `my-abbreviations.typ` comes in.
 Here I define some abbreviations needed for Proto-Lisian specifically,
 so you'd likely tune it for your particular language.
 In that file I also create my own functions mainly for LFG notation.
@@ -43,7 +43,8 @@ for ease of editing.
 which for this case is just images. 
 
 ## Background
-I had originally began the text with the intention of publishing it on Fiat Lingua,
+I had originally begun the text
+with the intention of publishing it on [Fiat Lingua](https://fiatlingua.org/),
 but I lost steam due to personal reasons (the language itself is not abandoned).
 So, I decided I might as well open source it and share it with you guys,
 in case anyone finds it useful!
@@ -53,7 +54,7 @@ Typst is a typesetting language, like LaTeX.
 That means you can use it to create consistent page designs
 with as much specificity as you could think.
 LaTeX is famously a little hard to get into,
-so Typst was created as an newer, modern,
+so Typst was created as a newer, modern,
 simpler-to-learn alternative.
 I am not affiliated with Typst beyond using it as a user.
 
